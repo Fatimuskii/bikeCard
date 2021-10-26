@@ -1,0 +1,17 @@
+<template>
+    <lightning-card>
+        <lightning-record-form
+            object-api-name={objectApiName}
+            fields={fields}
+            onsuccess={handleSuccess}>
+        </lightning-record-form>
+    </lightning-card>
+</template>
+
+
+<!--
+Línea 3: Utilizando lightning-record-form en el marcado, obtenemos todas las ventajas de seguridad y desempeño que proporciona Lightning Data Service. Cuando lightning-record-form no especifica un recordId, opera en modo edit y crea un registro en el envío.
+Línea 4: La vinculación de la propiedad object-api-name indica el tipo de objeto a cargar.
+Línea 5: La vinculación de la propiedad fields indica los campos para mostrar en el formulario.
+Línea 6: Establecemos handleSuccess como el controlador para el evento success.
+-->
